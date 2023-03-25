@@ -9,18 +9,18 @@ import { ShoppingListService } from './shopping-list.service';
   templateUrl: './shopping-list.component.html',
   styleUrls: ['./shopping-list.component.css']
 })
-export class ShoppingListComponent implements OnInit, OnDestroy{
+export class ShoppingListComponent implements OnInit, OnDestroy {
   ingredients: Ingredient[];
   private igChangeSub: Subscription;
 
-  constructor(private sListService : ShoppingListService, private loggingService: LoggingService) {}
+  constructor(private sListService: ShoppingListService, private loggingService: LoggingService) { }
 
   ngOnInit() {
     this.loggingService.printLog('hello from shoppingListComponent ngOnInit');
     this.ingredients = this.sListService.getIngredients();
     this.igChangeSub = this.sListService.ingredientChanged
       .subscribe(
-        (ingredients : Ingredient[]) => {
+        (ingredients: Ingredient[]) => {
           this.ingredients = ingredients;
         })
   }

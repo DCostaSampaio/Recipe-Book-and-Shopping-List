@@ -10,7 +10,7 @@ export class RecipeService {
 
   private recipes: Recipe[] = [];
 
-  constructor(private sListService : ShoppingListService) {}
+  constructor(private sListService: ShoppingListService) { }
 
   setRecipes(recipes: Recipe[]) {
     this.recipes = recipes;
@@ -21,11 +21,11 @@ export class RecipeService {
     return this.recipes.slice();
   }
 
-  getRecipe(id: number){
+  getRecipe(id: number) {
     return this.recipes[id];
   }
 
-  addToShoppingList(ingredients : Ingredient[]){
+  addToShoppingList(ingredients: Ingredient[]) {
     this.sListService.addIngredients(ingredients)
   }
 

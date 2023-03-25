@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0, 0, 0, 0.75);
   z-index: 50;
 }
 
@@ -16,9 +16,9 @@
   padding: 16px;
   z-index: 100;
   background: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.26);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
 .alert-box-action {
-text-align: right;
+  text-align: right;
 }

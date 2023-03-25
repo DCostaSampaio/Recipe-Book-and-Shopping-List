@@ -16,4 +16,4 @@ import { ShoppingListService } from "./shopping-list/shopping-list.service";
     }
   ]
 })
-export class CoreModule {}
+export class CoreModule { }

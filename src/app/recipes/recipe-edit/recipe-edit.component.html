@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12">
           <button type="submit" class="btn btn-success" [disabled]="!recipeForm.valid">Save</button>
-          <button type="button" class="btn btn-danger"(click)="onCancelEdit()">Cancel</button>
+          <button type="button" class="btn btn-danger" (click)="onCancelEdit()">Cancel</button>
         </div>
       </div>
       <div class="row">
@@ -38,7 +38,8 @@
       </div>
       <div class="row">
         <div class="col-xs-12" formArrayName="ingredients">
-          <div class="row" *ngFor="let ingredientControl of recipeControls; let i = index" [formGroupName]="i" style="margin-top: 10px;">
+          <div class="row" *ngFor="let ingredientControl of recipeControls; let i = index" [formGroupName]="i"
+            style="margin-top: 10px;">
             <div class="col-xs-8">
               <input type="text" class="form-control" formControlName="name">
             </div>

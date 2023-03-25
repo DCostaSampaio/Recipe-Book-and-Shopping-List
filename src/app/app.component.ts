@@ -9,7 +9,7 @@ import { LoggingService } from './logging.service';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private authService: AuthService, private loggingService: LoggingService){
+  constructor(private authService: AuthService, private loggingService: LoggingService) {
 
   }
 
